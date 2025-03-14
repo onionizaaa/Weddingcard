@@ -192,7 +192,7 @@
       scale: 0;
     }
   }
-  @keyframes scale-x {
+  /* @keyframes scale-x {
     0%,
     10% {
       width: calc(100vw - (2 * var(--gutter)));
@@ -215,7 +215,7 @@
           view-timeline: --runner;
         }
 
-        /* &[data-center='true'] {
+        &[data-center='true'] {
           .scaler img {
             animation-name: scale-x, scale-y;
             animation-fill-mode: both;
@@ -223,8 +223,8 @@
             animation-timeline: --runner, --runner;
             animation-range: entry 100% exit -20%;
           }
-        } */
-/* 
+        }
+
         &[data-layers='true'] {
           .grid .layer {
             animation-name: fade, reveal;
@@ -255,10 +255,10 @@
               animation-range: entry 100% exit -20%;
             }
           }
-        } */
+        }
       }
     }
-  }
+  } */
 }
 
 @layer setup {
