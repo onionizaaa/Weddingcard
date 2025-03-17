@@ -14,6 +14,10 @@
       --flip: 1;
     }
   }
+
+  .tp-dfwv {
+    display: none !important;
+  }
   [data-enhanced='true'] {
     @media (prefers-reduced-motion: no-preference) {
       @supports (animation-timeline: scroll()) and (animation-range: 0 100%) {
