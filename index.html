@@ -11,7 +11,23 @@
     <link rel="stylesheet" href="addbuttoncal.css">
     <link rel="stylesheet" href="timeline.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.4/ScrollTrigger.min.js"></script>
+    <script>
+  // ลงทะเบียน ScrollTrigger
+  gsap.registerPlugin(ScrollTrigger);
+
+  // ใช้งาน ScrollTrigger
+  gsap.to("main section:first-of-type", {
+    scrollTrigger: {
+      trigger: "main section:first-of-type",
+      start: "top -10%",
+      end: "bottom 80%",
+      scrub: true
+    },
+    x: 100
+  });
+</script>
 
 </head>
 <body>
