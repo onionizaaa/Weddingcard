@@ -22,7 +22,7 @@ const hasScrollSupport = CSS.supports(
 )
 
 const config = {
-  theme: 'system',
+  theme: 'light',
   enhanced: true,
   stick: true,
   layers: true,
