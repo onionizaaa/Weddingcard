@@ -397,11 +397,11 @@ body {
   }
   
   header {
-    width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+max-width: 100%;
     padding: 20px;
     text-align: center;
   }
