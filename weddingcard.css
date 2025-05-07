@@ -332,7 +332,7 @@ body {
   }
 
   .grid > .layer {
-    display: grid;
+    display: grid !important;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     grid-template-columns: subgrid;
@@ -397,11 +397,11 @@ body {
   }
   
   header {
+    width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
     padding: 20px;
     text-align: center;
   }
@@ -644,7 +644,7 @@ td {
 
 .calendar-container {
 	position: relative;
-    width: 81%; /* ปรับขนาดอัตโนมัติ */
+    width: 100%; /* ปรับขนาดอัตโนมัติ */
     max-width: 450px; /* จำกัดขนาดสูงสุด */
     margin: auto;
     text-align: center;
