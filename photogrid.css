@@ -377,7 +377,7 @@
     align-content: center;
     padding-left: 48px;
     text-align: left;
-    max-width: calc(100% - (2 * var(--gutter)));
+    width: 100%;
   }
   body {
     display: block;
