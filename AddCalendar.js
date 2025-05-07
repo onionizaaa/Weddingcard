@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "BEGIN:VEVENT",
         "UID:" + new Date().getTime() + "@yourdomain.com",
         "DTSTAMP:" + formatDate(new Date()),
-        "DTSTART:20250830T110000Z", // วันที่เริ่ม
+        "DTSTART:20250830T103000Z", // วันที่เริ่ม
         "DTEND:20250830T140000Z",   // วันที่สิ้นสุด
         "SUMMARY:Nook&&BEAM's Wedding Day.",
         "DESCRIPTION:Wedding Party.",
