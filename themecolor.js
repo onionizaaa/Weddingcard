@@ -29,7 +29,7 @@
 })();
 
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['She said yes.', 'He said finally.', 'Now we say: Welcome to our wedding!'], 'text',['tomato','rebeccapurple','lightblue']);
+consoleText(['She said yes.', 'He said finally.', 'Now we say:\nWelcome to our wedding!'], 'text',['tomato','rebeccapurple','lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
