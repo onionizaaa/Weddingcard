@@ -363,10 +363,7 @@
   body {
     background: canvasText;
   }
-  h1 {
-    --font-level: 8;
-    line-height: 0.6;
-  }
+  
   h2 {
     --font-level: 4;
   }
@@ -478,6 +475,7 @@
     min-height: 100vh;
     font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue',
       Helvetica, Arial, sans-serif, system-ui;
+      
   }
 
   .content-wrap::before {
@@ -533,8 +531,4 @@
     white-space: nowrap;
     border-width: 0;
   }
-}
-
-[data-stick='true'] div.tp-dfwv {
-  position: fixed;
 }
