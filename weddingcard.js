@@ -1,15 +1,6 @@
 import { Pane } from 'https://cdn.skypack.dev/tweakpane@4.0.4'
 import gsap from 'https://cdn.skypack.dev/gsap@3.12.0'
 import ScrollTrigger from 'https://cdn.skypack.dev/gsap@3.12.0/ScrollTrigger'
-document.addEventListener('gesturestart', function (e) {
-  e.preventDefault();
-});
-document.addEventListener('gesturechange', function (e) {
-  e.preventDefault();
-});
-document.addEventListener('gestureend', function (e) {
-  e.preventDefault();
-});
 
 let layersCtrl
 let centerCtrl
@@ -22,7 +13,7 @@ const hasScrollSupport = CSS.supports(
 )
 
 const config = {
-  theme: 'light',
+  theme: 'system',
   enhanced: true,
   stick: true,
   layers: true,
@@ -197,7 +188,6 @@ ctrl.addBinding(config, 'theme', {
 
 ctrl.on('change', sync)
 update()
-
 const targets = document.querySelectorAll('.timeline ol li');
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {

@@ -473,9 +473,6 @@
     display: grid;
     place-items: center;
     min-height: 100vh;
-    font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue',
-      Helvetica, Arial, sans-serif, system-ui;
-      
   }
 
   .content-wrap::before {

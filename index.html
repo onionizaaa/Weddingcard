@@ -1,424 +1,187 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NoOkBeam's Day</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.ico" />
-  <link rel="stylesheet" href="weddingcard.css">
-  <link rel="stylesheet" href="photogrid.css">
-  <link rel="stylesheet" href="button.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoOkBeam's Day</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="Front/front.css"> <!-- เชื่อมไฟล์ CSS -->
 </head>
-
 <body>
 
-  <div class="content-wrap">
     <header>
-      <h1 class="fluid" id='text'>Welcome To <br/>Our Special Day</h1>
+      <h1 class="fluid" id='text'>Our Special Day</h1>
       <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'></div></div>
+      <img src="Final/Arttoy-1 copy.png" alt="" class="image-overlay1">
+      <img src="Final/Arttoy-1.jpg" alt="Background Overlay" class="image-overlay">
+
+      </div>
     </header>
 
-    <main>
-      <section>
+      <div class="fixed-bottom-container">
+        <svg class="sr-only" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <!-- Noise & Distortion -->
+              <filter id="noiseshow">
+                <feTurbulence
+                  type="turbulence"
+                  baseFrequency="0.6"
+                  numOctaves="10"
+                  result="noise"
+                ></feTurbulence>
+              </filter>
+            </defs>
+          </svg>
+          <div class="instruction">
+            <svg viewBox="0 0 144 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M129.189 0.0490494C128.744 0.119441 126.422 0.377545 124.03 0.635648C114.719 1.6446 109.23 2.4893 108.058 3.09936C107.119 3.56864 106.674 4.34295 106.674 5.44576C106.674 6.71281 107.424 7.51058 109.043 7.97986C110.403 8.37875 110.825 8.42567 118.87 9.52847C121.778 9.92736 124.288 10.3028 124.475 10.3732C124.663 10.4436 122.951 11.1006 120.676 11.8749C110.028 15.4414 100.412 20.7677 91.7339 27.9242C88.38 30.7164 81.6957 37.4271 79.2096 40.5009C73.8387 47.2116 69.6874 54.8139 66.5681 63.7302C65.9348 65.4665 65.3484 66.8978 65.2546 66.8978C65.1374 66.8978 63.7771 66.7336 62.2291 66.5693C52.9649 65.5134 43.1847 68.1649 34.1316 74.2186C24.7735 80.46 18.5349 87.7338 10.5371 101.742C2.53943 115.726 -1.0959 127.482 0.287874 135.014C0.89767 138.463 2.0469 140.035 3.97011 140.082C5.28352 140.105 5.37733 139.659 4.20465 139.049C3.05541 138.463 2.6567 137.9 2.32835 136.281C0.616228 128.021 6.24512 113.028 17.4325 96.1104C23.2725 87.241 28.362 81.9147 35.5622 77.1046C43.8649 71.5437 52.7069 69.033 61.1737 69.8308C64.9967 70.1828 64.6917 69.9247 64.1992 72.4822C62.2525 82.5013 63.8005 92.6378 67.9753 97.354C73.1116 103.079 81.9771 102 85.0027 95.2657C86.3395 92.2858 86.3864 87.7103 85.1434 83.9796C83.1498 78.0901 80.007 73.8197 75.4335 70.8163C73.8152 69.7604 70.4848 68.1883 69.875 68.1883C69.359 68.1883 69.4294 67.6487 70.2268 65.3257C72.3377 59.2486 75.457 52.7021 78.4122 48.244C83.2436 40.9232 91.4524 32.5701 99.1687 27.103C105.806 22.4102 113.241 18.5386 120.512 16.0045C123.772 14.8548 129.87 13.1889 130.081 13.3766C130.128 13.447 129.541 14.362 128.791 15.4414C124.78 21.0258 122.716 26.0706 122.388 30.998C122.224 33.7198 122.341 34.588 122.88 34.2595C122.998 34.1891 123.678 32.969 124.405 31.5611C126.281 27.8069 131.722 20.6738 139.579 11.6402C141.127 9.85697 142.652 7.86254 143.027 7.08823C144.552 4.03792 143.52 1.48035 140.377 0.471397C139.439 0.166366 138.102 0.0490408 134.584 0.0255769C132.074 -0.021351 129.635 0.00212153 129.189 0.0490494ZM137.117 4.92955C137.187 5.0234 136.718 5.63346 136.061 6.29045L134.865 7.48712L131.042 6.73627C128.931 6.33739 126.727 5.9385 126.14 5.8681C124.827 5.68039 124.123 5.32843 124.968 5.28151C125.296 5.28151 126.868 5.11725 128.486 4.953C131.3 4.64797 136.812 4.62451 137.117 4.92955ZM71.5168 72.5292C76.2075 74.899 79.4441 78.8175 81.3204 84.355C83.6189 91.1361 81.2266 96.8378 76.0433 96.8847C73.3227 96.9082 70.9773 95.2188 69.5936 92.2389C68.2802 89.4232 67.6938 86.5606 67.5765 82.1259C67.4593 78.3248 67.6 76.4242 68.2333 72.7403L68.4912 71.2856L69.359 71.5906C69.8515 71.7548 70.8132 72.1772 71.5168 72.5292Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span1>Roll this!</span1>
+          </div>
       
-        <div class="content">
-          <div class="grid">
-            <div class="layer">
-              <div>
-                <img src="3.JPG" alt="" />
-              </div>
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1556304044-0699e31c6a34?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fGZhc2hpb258ZW58MHx8MHx8fDA%3D"
-                  alt="" />
-              </div>
-              <div>
-                <img src="4.jpg" alt="" />
-              </div>
-              <div>
-                <img src="5.jpg" alt="" />
-              </div>
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1488161628813-04466f872be2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fG1vZGVsJTIwZmFzaGlvbiUyMHN0cmVldHxlbnwwfHwwfHx8MA%3D%3D"
-                  alt="" />
-              </div>
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1565321590372-09331b9dd1eb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGFpciUyMGpvcmRhbnxlbnwwfHwwfHx8MA%3D%3D"
-                  alt="" https />
-              </div>
+          <div class="slider">
+            <div class="test-stack">
+              <div></div>
+              <div></div>
             </div>
-            <div class="layer">
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1531525645387-7f14be1bdbbd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjM4fHxwcm9kdWN0fGVufDB8fDB8fHww"
-                  alt="" />
+            <div class="slider__track">
+              <label for="slider" class="sr-only">Slider</label>
+              <input
+                aria-label="Slide to 100 to unlock premium"
+                tabindex="0"
+                type="range"
+                id="slider"
+                min="0"
+                value="0"
+                max="100"
+                step="1"
+              />
+              <div class="slider__fill">
+                <span>Are you ready?</span>
               </div>
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1637414165749-9b3cd88b8271?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHRlY2glMjBwcm9kdWN0fGVufDB8fDB8fHww"
-                  alt="" />
+              <div class="slider__indicator">
+                <div class="shines"></div>
+                <div class="noise-holder">
+                  <div class="noise">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="arrows-holder">
+                  <div class="arrows">
+                    <svg
+                      viewBox="0 0 120 80"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M71.5542 7.10156C71.5542 7.10156 91.68 18.4986 100.553 26.104C111.053 35.104 112.553 39.104 112.053 42.604C111.553 46.104 104.614 51.1058 97.6141 55.6058C89 61.1435 72.5003 72.1101 72.5003 72.1101M7 42.6126C7 42.6126 36.3395 36.643 56 36.6103C75.9938 36.5771 109 40.6102 109 40.6102"
+                        stroke="currentColor"
+                        stroke-width="14"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <svg
+                      viewBox="0 0 120 80"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M71.5542 7.10156C71.5542 7.10156 91.68 18.4986 100.553 26.104C111.053 35.104 112.553 39.104 112.053 42.604C111.553 46.104 104.614 51.1058 97.6141 55.6058C89 61.1435 72.5003 72.1101 72.5003 72.1101M7 42.6126C7 42.6126 36.3395 36.643 56 36.6103C75.9938 36.5771 109 40.6102 109 40.6102"
+                        stroke="currentColor"
+                        stroke-width="14"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <svg
+                      viewBox="0 0 120 80"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M71.5542 7.10156C71.5542 7.10156 91.68 18.4986 100.553 26.104C111.053 35.104 112.553 39.104 112.053 42.604C111.553 46.104 104.614 51.1058 97.6141 55.6058C89 61.1435 72.5003 72.1101 72.5003 72.1101M7 42.6126C7 42.6126 36.3395 36.643 56 36.6103C75.9938 36.5771 109 40.6102 109 40.6102"
+                        stroke="currentColor"
+                        stroke-width="14"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <svg
+                      viewBox="0 0 120 80"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M71.5542 7.10156C71.5542 7.10156 91.68 18.4986 100.553 26.104C111.053 35.104 112.553 39.104 112.053 42.604C111.553 46.104 104.614 51.1058 97.6141 55.6058C89 61.1435 72.5003 72.1101 72.5003 72.1101M7 42.6126C7 42.6126 36.3395 36.643 56 36.6103C75.9938 36.5771 109 40.6102 109 40.6102"
+                        stroke="currentColor"
+                        stroke-width="14"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1699911251220-8e0de3b5ce88?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8b25ld2hlZWx8ZW58MHx8MHx8fDA%3D"
-                  alt="" />
-              </div>
-              <div>
-                <img src="4.jpg" alt="" />
-              </div>
-              <div>
-                <img
-                  src="https://plus.unsplash.com/premium_photo-1706078438060-d76ced26d8d5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGNhbWVyYSUyMHBvbGFyb2lkfGVufDB8fDB8fHww"
-                  alt="" />
-              </div>
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1525385444278-b7968e7e28dc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fGl0ZW18ZW58MHx8MHx8fDA%3D"
-                  alt="" />
-              </div>
-            </div>
-            <div class="layer">
-              <div>
-                <img
-                  src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aXRlbXxlbnwwfHwwfHx8MA%3D%3D"
-                  alt="" />
-              </div>
-              <div>
-                <img src="1.JPG" alt="" />
-              </div>
-            </div>
-            <div class="scaler">
-              <img src="3.JPG" alt="" />
-              <!--                 <img src="./model-shades.jpg" alt="" /> -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div></div>
-
-
-
-        <div class="calendar-container">
-
-          <h4>
-
-            <div class="day">30</div>
-            <div class="month">August</div>
-
-          </h4>
-
-          <table class="calendar">
-
-            <thead>
-
-              <tr>
-
-                <td>Mon</td>
-                <td>Tue</td>
-                <td>Wed</td>
-                <td>Thu</td>
-                <td>Fri</td>
-                <td>Sat</td>
-                <td>Sun</td>
-
-              </tr>
-
-            </thead>
-
-            <tbody>
-
-              <tr>
-                <td class="prev-month">28</td>
-                <td class="prev-month">29</td>
-                <td class="prev-month">30</td>
-                <td class="prev-month">31</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-              </tr>
-
-              <tr>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td>10</td>
-              </tr>
-
-              <tr>
-                <td>11</td>
-                <td>12</td>
-                <td>13</td>
-                <td>14</td>
-                <td>15</td>
-                <td>16</td>
-                <td>17</td>
-
-              </tr>
-
-              <tr>
-                <td>18</td>
-                <td>19</td>
-                <td>20</td>
-                <td>21</td>
-                <td>22</td>
-                <td>23</td>
-                <td>24</td>
-              </tr>
-
-              <tr>
-                <td>25</td>
-                <td>26</td>
-                <td>27</td>
-                <td>28</td>
-                <td>29</td>
-                <td class="current-day">30</td>
-                <td>31</td>
-              </tr>
-
-            </tbody>
-
-          </table>
-
-          <div class="ring-left"></div>
-          <div class="ring-right"></div>
-
-        </div> <!-- end calendar-container -->
-
-      </div> <!-- end container -->
-
-      <div class="center-wrapper">
-        <a href="#" class="btn btn-4 hover-border-7 cta" id="download-ics">
-          <span>Add to calendar</span>
-        </a>
-      </div>
-
-
-
-      <div id="slidshow">
-        <div class="gallery">
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1610042560883-3cab6606b805?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxODczNDB8&ixlib=rb-4.0.3&q=100&w=500"
-              alt="Pink and blue clouds at sunset. " title="Photo by Jeremy Doddridge for Unsplash">
-            <figcaption>8 PM, Summer</figcaption>
-          </figure>
-          <figure>
-            <div>
-              <div>
-                <h2>Dress Code.</h2>
-                <p>Scroll Animation!</p>
-                <p><br><small>Related work : <br><a target="_blank" href="https://codepen.io/wakana-k/pen/oNJxbPw">Hover
-                      animation version</a></small></p>
-              </div>
-            </div>
-          </figure>
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1566228015668-4c45dbc4e2f5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxODczNDB8&ixlib=rb-4.0.3&q=100&w=500"
-              alt="Low angle view up into a sky filled with deep blue clouds. "
-              title="Photo by Matthew Brayer for Unsplash">
-            <figcaption>3 PM, Winter</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1525920980995-f8a382bf42c5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxODc0ODZ8&ixlib=rb-4.0.3&q=100&w=500"
-              alt="Heavy gray clouds in the sky. " title="Photo by Simeon Muller for Unsplash">
-            <figcaption>10 AM, Summer Storm</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxODc1Mjl8&ixlib=rb-4.0.3&q=100&w=500"
-              alt="Deep orange clouds at sunset. " title="Photo by Laura Vinck for Unsplash">
-            <figcaption>5 PM, Autumn</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1583506140156-6e343f045b81?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxODc1OTV8&ixlib=rb-4.0.3&q=100&w=500"
-              alt="Clouds in shades of dark blue and magenta at sunset. " title="Photo by Szabo Viktor for Unsplash">
-            <figcaption>7 PM, Spring</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1525920980995-f8a382bf42c5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxODc0ODZ8&ixlib=rb-4.0.3&q=100&w=500"
-              alt="Heavy gray clouds in the sky. " title="Photo by Simeon Muller for Unsplash">
-            <figcaption>10 AM, Summer Storm</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxODc1Mjl8&ixlib=rb-4.0.3&q=100&w=500"
-              alt="Deep orange clouds at sunset. " title="Photo by Laura Vinck for Unsplash">
-            <figcaption>5 PM, Autumn</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1583506140156-6e343f045b81?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxODc1OTV8&ixlib=rb-4.0.3&q=100&w=500"
-              alt="Clouds in shades of dark blue and magenta at sunset. " title="Photo by Szabo Viktor for Unsplash">
-            <figcaption>7 PM, Spring</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1525920980995-f8a382bf42c5?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxODc0ODZ8&ixlib=rb-4.0.3&q=100&w=500"
-              alt="Heavy gray clouds in the sky. " title="Photo by Simeon Muller for Unsplash">
-            <figcaption>10 AM, Summer Storm</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxODc1Mjl8&ixlib=rb-4.0.3&q=100&w=500"
-              alt="Deep orange clouds at sunset. " title="Photo by Laura Vinck for Unsplash">
-            <figcaption>5 PM, Autumn</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="https://images.unsplash.com/photo-1583506140156-6e343f045b81?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMxODc1OTV8&ixlib=rb-4.0.3&q=100&w=500"
-              alt="Clouds in shades of dark blue and magenta at sunset. " title="Photo by Szabo Viktor for Unsplash">
-            <figcaption>7 PM, Spring</figcaption>
-          </figure>
-
-
-
-        </div>
-      </div>
-      </section>
-
-
-      <section id="Location" class="main-section" data-scroll-section>
-        <h1 class="container" data-scroll data-scroll-speed="1">Location</h1>
-        <div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3875.116907171033!2d100.4029133!3d13.7718228!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e291d974bf5c07%3A0x52692e9b54a84136!2sA%20gave%20gala!5e0!3m2!1sen!2sth!4v1741597589443!5m2!1sen!2sth"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <div class="center-wrapper">
-            <a href="https://maps.app.goo.gl/iA4JnNnmGwBjNK9m9" class="btn btn-4 hover-border-7 cta">
-              <span>CLICK FOR LOCATION</span>
-            </a>
-          </div>
-
-        </div>
-        <div><img src="GavegalaMap.JPG" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </div>
-  </div>
-  </section>
-  <section>
-    <h1>Theme Colors</h1>
-    <div id="slidshow">
-      <div class="gallery">
-        <figure>
-          <img src="Dresscode/เทา.jpg" alt="Pink and blue clouds at sunset. "
-            title="Photo by Jeremy Doddridge for Unsp">
-          <figcaption>#608d57</figcaption>
-        </figure>
-        <figure>
-          <div>
-            <div>
-              <h2>Dress Code</h2>
             </div>
           </div>
-        </figure>
-        <figure>
-          <img src="Dresscode/d6bea4.jpg" alt="Heavy gray clouds in the sky. "
-            title="Photo by Simeon Muller for Unsplash">
-          <figcaption>#d6bea4</figcaption>
-        </figure>
-        <figure>
-          <img src="Dresscode/3d8d61.jpg" alt="Low angle view up into a sky filled with deep blue clouds. "
-            title="Photo by Matthew Brayer for Unsplash">
-          <figcaption>#3d8d61</figcaption>
-        </figure>
-        <figure>
-          <img src="Dresscode/828fb1.jpg" alt="Heavy gray clouds in the sky. "
-            title="Photo by Simeon Muller for Unsplash">
-          <figcaption>#828fb1</figcaption>
-        </figure>
-        <figure>
-          <img src="Dresscode/เหลือง.jpg" alt="Heavy gray clouds in the sky. "
-            title="Photo by Simeon Muller for Unsplash">
-          <figcaption>#fec24d</figcaption>
-        </figure>
-        <figure>
-          <img src="Dresscode/ecc049.jpg" alt="Heavy gray clouds in the sky. "
-            title="Photo by Simeon Muller for Unsplash">
-          <figcaption>#ecc049</figcaption>
-        </figure>
-        <figure>
-          <img src="Dresscode/น้ำตาล.jpg" alt="Deep orange clouds at sunset. "
-            title="Photo by Laura Vinck for Unsplash">
-          <figcaption>#7c4c36</figcaption>
-        </figure>
-        <figure>
-          <img src="Dresscode/น้ำตาลอ่อน.jpg" alt="Clouds in shades of dark blue and magenta at sunset. "
-            title="Photo by Szabo Viktor for Unsplash">
-          <figcaption>#e3a378</figcaption>
-        </figure>
-        <figure>
-          <img src="Dresscode/เนื้อ.jpg" alt="Heavy gray clouds in the sky. "
-            title="Photo by Simeon Muller for Unsplash">
-          <figcaption>#fedbb4</figcaption>
-        </figure>
-
-  </section>
-
-
-<section class="qrcode">
-  <h8 class="fluid"> <br/><br/><br/>A Simple Way to Say Congratulations<br/><br/></h8>
-<div id="slidshow">
-  <div class="gallery">
-    
-    <figure>
-      <div>
-        <div id="p1">
-          All we really need is your love and laughter, but if you’d like to share a little extra.
-        </div>
+         
+          
+            
+              <circle
+                cx="161.191"
+                cy="320.191"
+                r="133.191"
+                stroke="currentColor"
+                stroke-width="20"
+              ></circle>
+              <circle
+                cx="806.809"
+                cy="320.191"
+                r="133.191"
+                stroke="currentColor"
+                stroke-width="20"
+              ></circle>
+              <circle
+                cx="695.019"
+                cy="587.733"
+                r="31.4016"
+                fill="currentColor"
+              ></circle>
+              <circle
+                cx="272.981"
+                cy="587.733"
+                r="31.4016"
+                fill="currentColor"
+              ></circle>
+              <path
+                d="M564.388 712.083C564.388 743.994 526.035 779.911 483.372 779.911C440.709 779.911 402.356 743.994 402.356 712.083C402.356 680.173 440.709 664.353 483.372 664.353C526.035 664.353 564.388 680.173 564.388 712.083Z"
+                fill="currentColor"
+              ></path>
+              <rect
+                x="310.42"
+                y="448.31"
+                width="343.468"
+                height="51.4986"
+                fill="#FF1E1E"
+              ></rect>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M745.643 288.24C815.368 344.185 854.539 432.623 854.539 511.741H614.938V454.652C614.938 433.113 597.477 415.652 575.938 415.652H388.37C366.831 415.652 349.37 433.113 349.37 454.652V511.741L110.949 511.741C110.949 432.623 150.12 344.185 219.845 288.24C289.57 232.295 384.138 200.865 482.744 200.865C581.35 200.865 675.918 232.295 745.643 288.24Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
       </div>
-    </figure>
-    <figure>
-      <img src="qrcode.jpg" alt="Pink and blue clouds at sunset. " title="Photo by Jeremy Doddridge for Unsp">
-      <figcaption>MADE IT EASY WITH QRcode here.</figcaption>
-    </figure>
     
-    
-  </section>
-  <div><h9 class="fluid"><br/>As we begin our new chapter,<br/>
-    we thank you for being part of our story.</h9></div>
-  </main>
-  </div>
 
-
-
-  <footer>
-    
-  </footer>
-  <a class="bear-link" href="https://nookbeamweddingcard.online" target="_blank"
-    rel="noreferrer noopener">
-    <svg class="w-9" viewBox="0 0 969 955" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="161.191" cy="320.191" r="133.191" stroke="currentColor" stroke-width="20"></circle>
-      <circle cx="806.809" cy="320.191" r="133.191" stroke="currentColor" stroke-width="20"></circle>
-      <circle cx="695.019" cy="587.733" r="31.4016" fill="currentColor"></circle>
-      <circle cx="272.981" cy="587.733" r="31.4016" fill="currentColor"></circle>
-      <path
-        d="M564.388 712.083C564.388 743.994 526.035 779.911 483.372 779.911C440.709 779.911 402.356 743.994 402.356 712.083C402.356 680.173 440.709 664.353 483.372 664.353C526.035 664.353 564.388 680.173 564.388 712.083Z"
-        fill="currentColor"></path>
-      <rect x="310.42" y="448.31" width="343.468" height="51.4986" fill="#FF1E1E"></rect>
-      <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M745.643 288.24C815.368 344.185 854.539 432.623 854.539 511.741H614.938V454.652C614.938 433.113 597.477 415.652 575.938 415.652H388.37C366.831 415.652 349.37 433.113 349.37 454.652V511.741L110.949 511.741C110.949 432.623 150.12 344.185 219.845 288.24C289.57 232.295 384.138 200.865 482.744 200.865C581.35 200.865 675.918 232.295 745.643 288.24Z"
-        fill="currentColor"></path>
-    </svg>
-  </a>
-
-  <script type="module" src="weddingcard.js"></script>
-  <script src="AddCalendar.js"></script>
-  <script src="themecolor.js"></script>
-
+    <script type="module" src="Front/front.js"></script>
 </body>
-
 </html>

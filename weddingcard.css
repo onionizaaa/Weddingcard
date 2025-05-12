@@ -265,7 +265,9 @@ body {
       --gutter: 1rem;
     }
   }
-
+svg {
+  display: none;
+}
   .content {
     min-height: 100vh;
     width: 100vw;
@@ -368,9 +370,11 @@ body {
 
   .grid img {
     width: 100%;
-    aspect-ratio: 4 / 5;
+    max-width: 400px;
+    aspect-ratio: 2 / 3;
     object-fit: cover;
     border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
   }
 }
 
@@ -535,7 +539,7 @@ body {
   }
 
   body {
-    background: light-dark(#fff, #000);
+    background: #ffc5bf;
     display: grid;
     place-items: center;
     min-height: 100vh;
@@ -789,7 +793,7 @@ td {
 };
 
 
-  @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 :root {
 	--adjust-size: 0px; /* 必要に応じて */
 }
@@ -807,7 +811,7 @@ html,
 #bodyslidslid {
 	position: relative;
 	color: #222;
-	font-family: "Kalam", sans-serif;
+	font-family: "Gloria Hallelujah", cursive !important;
 	min-height: 100vh;
 	overflow-x: hidden;
 	background-image: url("https://images.unsplash.com/photo-1531685250784-7569952593d2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTMyOTE2OTh8&ixlib=rb-4.0.3&q=100&w=3000");
@@ -894,6 +898,22 @@ img {
 .gallery figure:nth-child(even) {
 	--direction: alternate-reverse;
 }
+
+.gallery-theme2 figure:nth-child(7n) { --pin-color: #b3b3b3; }
+.gallery-theme2 figure:nth-child(7n+1) { --pin-color: #b3b3b3; }
+.gallery-theme2 figure:nth-child(7n+2) { --pin-color: #b3b3b3; }
+.gallery-theme2 figure:nth-child(7n+3) { --pin-color: #b3b3b3; }
+.gallery-theme2 figure:nth-child(7n+4) { --pin-color: #b3b3b3; }
+.gallery-theme2 figure:nth-child(7n+5) { --pin-color: #b3b3b3; }
+.gallery-theme2 figure:nth-child(7n+6) { --pin-color: #b3b3b3; }
+.gallery-theme2 figure:nth-child(7n+7) { --pin-color: #b3b3b3; }
+.gallery-theme2 figure:nth-child(7n+8) { --pin-color: #b3b3b3; }
+.gallery-theme2 figure:nth-child(7n+9) { --pin-color: #b3b3b3; }
+
+.gallery-theme3 figure:nth-child(7n) { --pin-color: #b3b3b3; }
+.gallery-theme3 figure:nth-child(7n+1) { --pin-color: #b3b3b3; }
+
+
 .gallery figure {
 	--angle: 3deg;
 	--count: 5;
