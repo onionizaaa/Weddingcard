@@ -193,6 +193,42 @@
         </a>
       </div>
 
+      <div class="center-wrapper">
+        <a href="javascript:void(0)" class="btn btn-4 hover-border-7 cta" id="download-ics">
+          <span>Add to calendar</span>
+        </a>
+      </div>
+      
+      <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("download-ics");
+        if (!btn) return;
+      
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+      
+          const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+          const icsURL = "https://res.cloudinary.com/dqqhepobk/raw/upload/v1747063271/wedding_x1vtnq.ics"; // 👈 แก้เป็นลิงก์ .ics จริงของคุณ
+      
+          if (isIOS) {
+            // ✅ iOS (รวม LINE): เปิดไฟล์ .ics
+            window.location.href = icsURL;
+          } else {
+            // ✅ Android / PC: เปิด Google Calendar Template
+            const gcalLink = new URL("https://calendar.google.com/calendar/render");
+            gcalLink.searchParams.set("action", "TEMPLATE");
+            gcalLink.searchParams.set("text", "Nook & BEAM's Wedding Day");
+            gcalLink.searchParams.set("details", "Come celebrate with us!");
+            gcalLink.searchParams.set("location", "https://maps.app.goo.gl/iA4JnNnmGwBjNK9m9");
+            gcalLink.searchParams.set("dates", "20250830T103000Z/20250830T140000Z");
+      
+            window.open(gcalLink.toString(), "_blank");
+          }
+        });
+      });
+      </script>
+      
+
 
 
       <div id="slidshow">
@@ -464,7 +500,7 @@
   </a>
 
   <script type="module" src="weddingcard.js"></script>
-  <script src="AddCalendar.js"></script>
+  <!-- <script src="AddCalendar.js"></script> -->
   <script src="themecolor.js"></script>
 
 </body>
