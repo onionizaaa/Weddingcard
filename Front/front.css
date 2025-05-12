@@ -521,7 +521,7 @@
     overflow-x: hidden;
     display: grid;
     place-items: center;
-    min-height: 100svh;
+    min-height: 100vh;
     font-family: 'SF Pro Text', 'SF Pro Icons', 'AOS Icons', 'Helvetica Neue',
       Helvetica, Arial, sans-serif, system-ui;
   }
@@ -589,7 +589,7 @@
     background: linear-gradient(to right,#30CFD0 0%, #330867 100% );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 4vw;
+    font-size: 10vw;
     font-family: 'Poppins', sans-serif;
     
   }
@@ -617,7 +617,7 @@
     left: 50%;
     transform: translateX(-50%);
     color: white; /* เปลี่ยนสี text ตาม theme */
-    font-size: 2rem;
+    font-size: 4rem;
     z-index: 1000; /* ให้ลอยอยู่ชั้นบน */
     pointer-events: none; /* ไม่ให้ไป block การคลิก element อื่น */
   }
