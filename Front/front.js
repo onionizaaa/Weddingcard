@@ -138,6 +138,6 @@ slider.addEventListener('input', function() {
     // หน่วงเวลา 500ms (2 วินาที) ก่อนเปลี่ยนหน้า
     setTimeout(() => {
       window.location.href = 'indexsec.html'; // เปลี่ยนเป็นหน้าที่ต้องการไป
-    }, 100);
+    }, 30);
   }
 });
